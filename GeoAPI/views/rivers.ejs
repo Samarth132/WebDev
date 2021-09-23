@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/meta_links.ejs') %>
+    <link rel="stylesheet" href="/country.css" />
+    <title>Geo API | <%= title %></title>
+  </head>
+  <body id="override">
+    <%- include('./partials/nav.ejs') %>
+    <section class="input m-3 p-3">
+      <div class="container-lg">
+        <form action="/api/river" method="get" class="row g-3">
+          <div class="col-lg-10">
+            <input
+              class="form-control"
+              type="text"
+              name="River"
+              placeholder="Enter river name"
+              aria-label="default input example"
+            />
+          </div>
+          <div class="col-lg-2">
+            <button type="submit" class="btn">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="output">
+      <div class="container-lg">
+        <div class="card p-3 m-5 rounded-5 shadow w-75 mx-auto">
+          <div class="card-body">
+            <% if(river != null){%>
+            <ul class="list-group">
+              <li class="list-group-item">River : <%= river.River %></li>
+              <li class="list-group-item">
+                Length(km) : <%= river['Length(km)'] %>
+              </li>
+              <li class="list-group-item">
+                Length(miles) : <%= river['Length(miles)'] %>
+              </li>
+              <li class="list-group-item">
+                Drainage area(km.sq) : <%= river['Drainagearea(km²)'] %>
+              </li>
+              <li class="list-group-item">
+                Average Discharge(m.cube/s) : <%=
+                river['Averagedischarge(m³/s)'] %>
+              </li>
+              <li class="list-group-item">Outflow : <%= river.Outflow %></li>
+              <li class="list-group-item">
+                Countries in drain basin : <%=
+                river.Countriesinthedrainagebasin.citationneeded %>
+              </li>
+            </ul>
+            <% } else{%>
+            <h6>No Entries listed</h6>
+            <ul class="list-group">
+              <li class="list-group-item">River:</li>
+              <li class="list-group-item">Length(km) :</li>
+              <li class="list-group-item">Length(miles) :</li>
+              <li class="list-group-item">Drainage area(km.sq) :</li>
+              <li class="list-group-item">Average Discharge(m.cube/s) :</li>
+              <li class="list-group-item">Outflow :</li>
+              <li class="list-group-item">Countries in drain area :</li>
+            </ul>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="foot">
+      <h4 class="text-center text-light">
+        Project by Samarth katti &copy; 2021
+      </h4>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

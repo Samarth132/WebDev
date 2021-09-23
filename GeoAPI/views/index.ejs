@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/meta_links.ejs') %>
+    <link rel="stylesheet" href="style.css" />
+    <title>Geo API | <%= title %></title>
+  </head>
+  <body id="override">
+    <!-- nav -->
+    <%- include('./partials/nav.ejs') %>
+    <section class="hero">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-6 hero-col-1">
+            <div>
+              <h1 class="display-5 text-center text-lg-start">
+                Geo API is a collection of APIs that provide information about
+                different aspects of countries
+              </h1>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-col-2">
+            <div class="text-center">
+              <img
+                src="./assets/globe-heroalt.jpg"
+                alt="Globe"
+                class="img-fluid w-75 rounded-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container-lg">
+        <h1 class="dispay-6 text-center pt-5">Why you should use it</h1>
+        <div class="row p-5">
+          <div class="col-xs-12 col-lg-6 mx-auto">
+            <div class="card1">
+              <ul class="list-group text-center w-lg-75">
+                <li class="list-group-item border-0">Quick and Easy access</li>
+                <li class="list-group-item border-0">
+                  Straight-forward Interface
+                </li>
+                <li class="list-group-item border-0">Free of cost</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+    <section class="cards">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-6 cards-col-1">
+            <div class="card1">
+              <img src="./assets/Countries_img.jpg" alt="countries" />
+              <h4>Information about Countries</h4>
+              <a href="/api/country" class="btn my-3">Visit API</a>
+            </div>
+          </div>
+          <div class="col-md-6 cards-col-2">
+            <div class="card1">
+              <img src="./assets/rivers_img.jpg" alt="rivers" />
+              <h4>Information about Rivers</h4>
+              <a href="/api/river" class="btn my-3">Visit API</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <h4 class="text-center text-light">
+        Project by Samarth katti &copy; 2021
+      </h4>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

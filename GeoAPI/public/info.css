@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #d5e6e6;
+}
+#override nav {
+  background: #403e55;
+  font-family: "Kanit", sans-serif;
+}
+#override .btn {
+  background: #d5e6e6;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+#override .btn:hover {
+  background: #aca9bb;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.output {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+.foot {
+  min-height: 10vh;
+  background: #403e55;
+  display: grid;
+  place-items: center;
+}
