@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  font-family: Nunito, sans-serif;
+  color: #444;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+.navhead {
+  color: teal;
+}
+.links {
+  margin-left: auto;
+}
+.links > a {
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  outline: 1px solid turquoise;
+  border-radius: 10px;
+}
+.links > a:hover {
+  outline: none;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+}
+.content {
+  max-width: 800px;
+  margin: 10px auto;
+}
+.homepage > h1 {
+  color: teal;
+  text-align: center;
+}
+.blog-list {
+  padding: 20px;
+  margin: 10px;
+}
+.blog-list:hover {
+  box-shadow: 0px 0px 5px 0px #777;
+}
+.blog-list a {
+  text-decoration: none;
+}
+.create {
+  margin: 10px;
+  max-height: 80vh;
+}
+.create form {
+  display: flex;
+  flex-direction: column;
+}
+form label,
+form input,
+form textarea,
+form select {
+  margin-bottom: 10px;
+}
+form select,
+form button {
+  text-align: center;
+  max-width: 100px;
+}

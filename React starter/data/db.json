@@ -1,0 +1,20 @@
+{
+  "blogs": [
+    {
+      "title": "this is not a blog ignore me",
+      "author": "jack is not an ass",
+      "body": "how not to be an ass.",
+      "id": 1
+    },
+    {
+      "title": "this is a blog but ignore me",
+      "author": "jacks brother",
+      "id": 2
+    },
+    {
+      "title": "this is blog...worship me",
+      "author": "jacks brother is the ass",
+      "id": 3
+    }
+  ]
+}
